@@ -1,0 +1,26 @@
+.featureCard {
+    background-color: var(--ifm-navbar-background-color);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: var(--ifm-navbar-shadow);
+    height: 220px;
+    text-align: center;
+  }
+
+  .featureCard img {
+    width: 4rem;
+    margin: 0 auto;
+  }
+
+  .featureCard h3 {
+    color: var(--verdaccio-color);
+    font-weight: bold;
+    font-size: 1.375rem;
+  }
+
+  .featureCard p {
+    color: var(--p-color);
+    /* font-size: 0.5rem; */
+    font-size: var(--font-size);
+  }
+  

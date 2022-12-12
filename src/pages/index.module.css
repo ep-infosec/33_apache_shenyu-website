@@ -1,0 +1,300 @@
+.primaryColor {
+  color:  var(--ifm-color-primary);
+}
+
+.section {
+  padding: 4.5rem 0;
+  width: 100%;
+}
+
+.sectionDashboard{
+  width: 100%;
+}
+
+.sectionAlt {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.sectionInner {
+  margin: 0 auto;
+  user-select: none;
+}
+
+.hero {
+  background-color: #F5F6F7;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+.heroProjectTitle {
+  color: #fff;
+  font-size: 3.75rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: .5em;
+}
+
+.heroProjectLogo {
+  height: 1.2em;
+  margin-right: .25em;
+}
+
+.heroTitleTextHtml b {
+  color: #FF5C00;
+}
+
+.buttonGetStarted{
+  width: 10rem;
+  background-color: #000033;
+  text-align: center;
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  box-shadow: 6px 6px 22px 2px rgb(0 0 51 / 20%);
+  border-radius: 8px;
+}
+
+.buttonGetStarted:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttonGithub{
+  width: 10rem;
+  background-color: #fff;
+  text-align: center;
+  height: 40px;
+  color: #000033;
+  line-height: 40px;
+  box-shadow: 6px 6px 22px 2px rgb(0 0 51 / 20%);
+  border-radius: 8px;
+}
+
+.buttonGithub:hover{
+  text-decoration: none;
+  color: #000033;
+}
+
+.containerCenter{
+  text-align: center;
+}
+
+.dividingLineBorder{
+  display: inline-block;
+  width: 60%;
+  height: 1px;
+  background: -webkit-linear-gradient(left,#fff -4%,#ccc 50%,#fff 100%);
+}
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.logoContainer{
+  border-radius: 8px;
+  box-shadow: 6px 6px 22px 2px  rgb(0 0 51 / 20%);
+  animation-duration: 2s;
+  animation-name: jackInTheBox;
+  float: right;
+  /* padding: 0 20px 20px; */
+  width: 37.5rem;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(245,246,247);
+}
+
+.indexCtas {
+  --ifm-button-size-multiplier: 1.6;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.indexCtas a:last-of-type {
+  margin: 20px 36px;
+}
+
+.indexCtasGitHubButtonWrapper {
+  display: flex;
+}
+
+.indexCtasGitHubButton {
+  overflow: hidden;
+  border: none;
+}
+
+.indexCtaTryNowButton:hover {
+  color: var(--ifm-color-primary);
+}
+
+.userSwiperContainer {
+  position: relative;
+  text-align: center;
+}
+
+
+.blockTitle:before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3px;
+  background-color: var(--ifm-color-primary);
+  margin: 0 auto 8px;
+}
+
+.blockTitle {
+  text-shadow: 4px 6px 0 rgb(0 0 0 / 7%);
+}
+
+.blockDescription{
+  margin-top: 40px;
+}
+
+.userPart{
+  display: block;
+  position: relative;
+  height: 360px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrollView{
+  margin-top: 40px;
+  animation: 15s linear 0s infinite alternate none running animation-autoplay;
+  position:absolute;
+}
+
+@keyframes animation-autoplay {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  100% {
+    transform: translate3d(-2000px, 0px, 0px);
+  }
+}
+
+.scrollLine1{
+  display: flex;
+  align-items: center;
+}
+
+.scrollLine2{
+  display: flex;
+  align-items: center;
+}
+
+.scrollLine3{
+  display: flex;
+  align-items: center;
+}
+
+
+.scrollItem{
+  flex-shrink: 0;
+  width: 170px;
+  padding: 15px 0px;
+  height: 100px;
+}
+
+.scrollImage{
+  width: 68%;
+  height: 68%;
+  object-fit: contain;
+}
+
+.scrollItemLeft{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.scrollItemRight{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.scrollItemLeftInner{
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  width: 88px;
+  height: 100%;
+}
+
+.scrollItemRightInner{
+  background: linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    width: 88px;
+    height: 100%;
+}
+
+.contentImg{
+  display: table;
+  margin: 0 auto;
+}
+
+[data-theme='dark'] .hero{
+  background-color: #1C1E21;
+}
+
+[data-theme='dark'] .scrollItemLeftInner{
+  background: linear-gradient(90deg, #272a36 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+[data-theme='dark'] .scrollItemRightInner{
+  background: linear-gradient(-90deg, #272a36 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+
+  .heroProjectTagline{
+    font-size: 20px;
+  }
+
+  .logoContainer{
+    border-radius: 8px;
+    box-shadow: 6px 6px 22px 2px  rgb(0 0 51 / 20%);
+    animation-duration: 2s;
+    animation-name: jackInTheBox;
+    width: 85vw;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(245,246,247);
+  }
+
+
+  :global(.user-swiper-button-prev){
+    top:950px !important; 
+    left: 0px !important;
+  }
+
+  :global(.user-swiper-button-next){
+    top:950px !important;
+    right: 0px !important;
+  }
+}
